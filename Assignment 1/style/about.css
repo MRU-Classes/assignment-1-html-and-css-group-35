@@ -1,0 +1,10 @@
+/* Style the first letter in the highlight paragraph */
+.highlight::first-letter {
+    font-size: 200%;
+    color: #FFD43B;
+}
+
+/* Contextual selector: style strong tags inside paragraph */
+p strong {
+    color: #306998;
+}

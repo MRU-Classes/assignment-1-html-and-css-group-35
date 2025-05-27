@@ -1,0 +1,77 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact us to learn more about Python" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/real-python-dev.png" alt="Python Logo" width="80" />
+      <h1>Why Python is Important</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Why Learn Python</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form action="mailto:example@example.com" method="post">
+        <label
+          >Subject*:<br />
+          <input type="text" name="subject" required maxlength="100" /> </label
+        ><br /><br />
+        <label
+          >Email*:<br />
+          <input
+            type="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          /> </label
+        ><br /><br />
+        <label
+          >Message*:<br />
+          <textarea name="body" required></textarea></label
+        ><br /><br />
+        <label
+          >Phone:<br />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="123-456-7890"
+            pattern="\d{3}-\d{3}-\d{4}"
+          /> </label
+        ><br /><br />
+        <label
+          >Preferred Contact Method:<br />
+          <input type="radio" name="contact" value="email" /> Email
+          <input type="radio" name="contact" value="phone" /> Phone </label
+        ><br /><br />
+        <label
+          >Topics of Interest:<br />
+          <input type="checkbox" name="topic" value="beginner" /> Beginner
+          <input type="checkbox" name="topic" value="advanced" />
+          Advanced </label
+        ><br /><br />
+        <label
+          >Best Date to Reach You:<br />
+          <input type="date" name="date" /> </label
+        ><br /><br />
+        <input type="reset" value="Clear" />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2025 Python Intro Project</p>
+    </footer>
+  </body>
+</html>

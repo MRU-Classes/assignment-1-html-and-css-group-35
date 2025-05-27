@@ -1,0 +1,27 @@
+/* Attribute selector: required fields have red borders */
+input[required], textarea[required] {
+    border: 2px solid red;
+}
+
+/* Pseudo-class selector for hover effect */
+input[type="submit"]:hover {
+    background-color: #FFD43B;
+    cursor: pointer;
+}
+
+/* Form layout improvements */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
