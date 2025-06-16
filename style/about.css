@@ -1,10 +1,31 @@
-/* Style the first letter in the highlight paragraph */
+
 .highlight::first-letter {
-    font-size: 200%;
-    color: #FFD43B;
+  font-size: 200%;
+  color: #FFD43B;
 }
 
-/* Contextual selector: style strong tags inside paragraph */
 p strong {
-    color: #306998;
+  color: #306998;
+}
+
+
+@media (max-width: 789px) {
+  .highlight::first-letter {
+    font-size: 170%;
+  }
+
+  p strong {
+    color: #205070; 
+  }
+}
+
+
+@media (max-width: 589px) {
+  .highlight::first-letter {
+    font-size: 150%;
+  }
+
+  p strong {
+    color: #102840; 
+  }
 }

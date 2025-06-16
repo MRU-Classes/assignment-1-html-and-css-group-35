@@ -1,75 +1,136 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
 main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 header, footer {
-    background-color: #306998;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #306998;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
 header img {
-    display: block;
-    margin: 0 auto;
-    width: 60px;
+  display: block;
+  margin: 0 auto;
+  width: 60px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
 nav li {
-    display: inline;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 nav a.active {
-    font-weight: bold;
-    color: #FFD43B;
+  font-weight: bold;
+  color: #FFD43B;
 }
 
 .float-right {
-    float: right;
-    margin-left: 10px;
-    width: 150px;
-    border-radius: 6px;
+  float: right;
+  margin-left: 10px;
+  width: 150px;
+  border-radius: 6px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
 }
 
 tr:nth-child(even) {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 tr:nth-child(odd) {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+
+@media (max-width: 789px) {
+  main {
+    padding: 15px;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .float-right {
+    width: 120px;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 589px) {
+  main {
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  header, footer {
+    padding: 8px 0;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  nav li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .float-right {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
